@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Relatório Paulo Pinto a21906966</title>
+</head>
+
+<body bgcolor="#defaf7">
+    <h1>Relatório Paulo Pinto a21906966</h1>
+    <h2>Eis os passos que realizei para o 1º trabalho:</h2>
+    <ul>
+
+        <h3>Criação do repositório e host (Heroku):</h3>
+
+        <li>Criei a pasta lab1 e o ficheiro <code>index.html</code>, fiz download da imagem <code>wordcloud.png</code></li>
+
+        <li>Criei o <a href="https://github.com/paulopinto-21906966/pw-lab1">repositório</a> no Github</li>
+
+        <li>Criei um projeto no Heroku e conectei ao repositório</li>
+        <img src="img/deploy.png">
+
+        <li>Criei os ficheiros <code>composer.json</code> e <code>index.php</code> para o Heroku mostrar devidamente a página index.html</li>
+ 
+        <h3>IP Lookup:</h3>
+
+        <li>Procurei o endereço do meu computador no website <a = href="https://whatismyipaddress.com/">whatismyipaddress.com</a></li>
+        <img src="img/whatsmyip.png">
+
+        <li>Executei o comando tracert na cmd e encontrei os "saltos" dados desde o meu computador até ao meu site</li>
+        <img src="img/tracert.png">
+
+        <li>Visualizei estes saltos no website <a = href="https://geotraceroute.com/">geotraceroute.com</a></li>
+        <img src="img/geotracert.png">
+
+        <h3>Seguindo para a inspeção no browser:</h3>
+        
+        <li>Observando a tab Network encontramos uma tabela que mostra informações sobre os diferentes ficheiros que foram "buscados".
+            Informações estas como:
+            <ol> 
+                <li>o nome do ficheiro</li>
+                <li>o método (GET ou POST)</li>
+                <li>o estado (neste caso temos o 200 (sucesso) e o 404 (file not found))</li>
+                <li>o initiator</li>
+                <li>o tamanho do ficheiro</li>
+                <li>o tempo demorado para ir buscar o ficheiro e no final um gráfico waterfall, que mostra o tempo que demorou cada ação que foi feita
+                    <ol type="i">
+                        <li>Request sent (é pedido o ficheiro)</li>
+                        <li>Waiting (tempo desde o request sent até ao ficheiro iniciar o download)</li>
+                        <li>Content Download (o tempo efetivo que demorou a fazer download)</li>
+                    </ol>
+                </li>
+        </li>
+        </ol>
+        <img src="img/sourcecode.png">
+
+        <li>O preview mostra o ficheiro em questão, o timing detalha o gráfico waterfall e o header mostra outras informações relativas ao ficheiro em questão:
+        </li>
+        <img src="img/waterfall.png">
+
+        <li>Ao inspecionar a <a href="https://www.ulusofona.pt/">página inicial da Lusófona</a> vemos que o site vai buscar bastantes ficheiros, e por isso demora mais tempo a carregar a página e o waterfall fica mais composto.</li>
+        <img src="img/lusofona_waterfall.png">
+    </ul>
+</body>
+
+</html>
