@@ -1,0 +1,42 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FAF3DD;
+    color: #5e6472;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.4em;
+    color: #ffa69e;
+}
+
+table {
+    background-color: #aed9e0;
+    border: #b8f2e6 2px;
+}
+
+a {
+    /* color:#783f99; */
+    color:#62c2df;
+    text-decoration: none;
+}
+a:visited {
+    /* color:#783f99; */
+    color:#bd78e6;
+}
+
+p {
+    font-size: 0.8em;
+}
+
+b {
+    color: #ffa69e;
+}
+
+/* Cores: 
+    melon: ffa69e,
+    eggshell: faf3dd,
+    aero blue: b8f2e6,
+    powderblue: aed9e0,
+    black coral: 5e6472
+*/
