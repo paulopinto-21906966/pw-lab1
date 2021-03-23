@@ -110,6 +110,10 @@ img {
     margin-right: auto;
 }
 
+img.flex{
+    display: inline-block;
+}
+
 .left {
     margin-left: 10px;
 }
@@ -154,10 +158,11 @@ li.header a {
     transition: color 0.2s linear;
     border-radius: 7px;
 }
+
 /* mudar a cor dos icones, para fazer a separação do Home/4/3 */
-li.header:nth-child(2), 
-li.header:nth-child(3), 
-li.header:nth-child(4){
+li.header:nth-child(2),
+li.header:nth-child(3),
+li.header:nth-child(4) {
     color: #9cc53d;
 }
 
@@ -274,7 +279,61 @@ summary {
     }
 }
 
-.material-icons.orange600 { color: #FB8C00; }
+
+/* multimedia flexbox */
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    /* border: 2px solid yellow; */
+}
+
+.flex-child:first-child {
+    margin-left: 100px;
+}
+
+/* multimedia images */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.greyscale {
+    transition: 0.8s ease-out;
+}
+
+.greyscale:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+
+.blur {
+    transition: 2s ease-in;
+}
+
+.blur:hover {
+    -webkit-filter: blur(6px);
+    filter: blur(6px);
+}
+
+
+.hue {
+    transition: 2s ease-in;
+}
+
+.hue:hover {
+    -webkit-filter: hue-rotate(80deg);
+    filter: hue-rotate(80deg);
+}
+
+
 /* Cores: 
     melon: ffa69e,
     eggshell: faf3dd,
