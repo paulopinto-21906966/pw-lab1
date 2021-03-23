@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cidade de Leiria</title>
+    <meta name="author" content="Paulo Pinto">
+    <meta name="keywords" content="Leiria">
+    <meta name="description" content="Website sobre Leiria">
+
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
+    <!-- Cores: 
+            melon: ffa69e,
+            eggshell: faf3dd,
+            aero blue: b8f2e6,
+            powderblue: aed9e0,
+            black coral: 5e6472
+        -->
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+    <ul class="header">
+        <li class="header">
+            <span class="tooltiptext">Home</span>
+
+            <a href="../index.html">
+                <i class="material-icons">save</i>
+            </a>
+        </li>
+        <li class="header">
+            <span class="tooltiptext">Início</span>
+
+            <a href="index.html">
+                <i class="material-icons">visibility</i>
+            </a>
+        </li>
+        <li class="header">
+            <span class="tooltiptext">Localização</span>
+
+            <a href="local.html">
+                <i class="material-icons">map</i>
+            </a>
+        </li>
+        <li class="header">
+            <span class="tooltiptext">Multimédia</span>
+
+            <a href="multimedia.html">
+                <i class="material-icons">movie</i>
+            </a>
+        </li>
+        <li class="header">
+            <span class="tooltiptext">Informações</span>
+
+            <a href="info.html">
+                <i class="material-icons">info</i>
+            </a>
+        </li>
+        <li class="header">
+            <span class="tooltiptext">Quiz</span>
+
+            <a href="quizz.html">
+                <i class="material-icons">quiz</i>
+            </a>
+        </li>
+        <li class="header">
+            <span class="tooltiptext">Comentários</span>
+
+            <a href="comentarios.html">
+                <i class="material-icons">comment</i>
+            </a>
+        </li>
+        <li class="header">
+            <span class="tooltiptext">HTML5/CSS</span>
+
+            <a href="html5-css.html">
+                <i class="material-icons">text_format</i>
+            </a>
+        </li>
+    </ul>
+    <br>
+    <div class="row">
+        <div class="aside">
+
+            <h1>Leiria</h1>
+            <figure>
+                <img class="center" src="images/leiria_castelo.jpg">
+                <figcaption>O Castelo de Leiria visto da cidade</figcaption>
+                <summary>Erguido a topo de um monte, serve quase como um compasso para nos guiarmos pela cidade
+                </summary>
+            </figure>
+
+        </div>
+
+        <div class="maincontent">
+            <h3>Quizz</h3>
+
+            <form method="post" action="mailto:paulopintodigital@gmail.com">
+                <fieldset>
+                    <legend>Dados Pessoais:</legend>
+                    <p>Nome: <input type="text" name="nome" autocomplete="no" size=10 maxlength="12" autofocus required>
+                    </p>
+                    <p>Apelido: <input type="text" name="apelido" size=10 maxlength="12" required></p>
+                    <p>E-mail: <input type="email" name="email" autocomplete="email" required></p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Quiz sobre a cidade:</legend>
+
+                    <!-- Rio Lis -->
+                    <p>Qual é o rio que atravessa a cidade? <input type="text" name="rio" placeholder="Rio xxx"
+                            autocomplete="no" size=5></p>
+
+                    <!-- D Dinis -->
+                    <p>Qual foi o rei que ordenou plantar o Pinhal de Leiria? <br>
+                        <input type="radio" name="rei" value="dinis">D. Dinis <br>
+                        <input type="radio" name="rei" value="joao">D. João II <br>
+                        <input type="radio" name="rei" value="carlos">D. Carlos <br>
+                        <input type="radio" name="rei" value="afonso">D. Afonso Henriques
+                    </p>
+
+                    <!-- FBAC e Surma -->
+                    <p>Quais destes artistas são leirienses? <br>
+                        <input type="checkbox" name="artistas" value="surma"> Surma <br>
+                        <input type="checkbox" name="artistas" value="davidbruno"> David Bruno <br>
+                        <input type="checkbox" name="artistas" value="FBAC"> First Breath After Coma <br>
+                        <input type="checkbox" name="artistas" value="deadcombo"> Dead Combo <br>
+                    </p>
+
+                    <!-- 2000-05-22 (com backend remover o ano) -->
+                    <p>Quando é o feriado municipal? <input type="date" name="feriado" min="2000-01-01"
+                            max="2000-12-31"></p>
+
+                    <!-- 1135 -->
+                    <p>Em que ano mandou D. Afonso Henriques construir o castelo de Leiria?
+                        <input type="number" name="anocastelo"></p>
+
+                    <!-- 125 -->
+                    <p>Quantos milhares de pessoas vivem em Leiria?
+                        <input type="range" name="population" min="100" max="150" step="5"
+                            onchange="rangevalue.value=this.value"></input>
+                        <output id="rangevalue">125</output>
+                    </p>
+
+                    <!-- ??? -->
+                    <p>Dê upload a duas imagens de celebridades de Leiria <input type="file" name="imagem" multiple></p>
+
+                    <!-- ??? -->
+                    <p>Escolha a cor do resultado do quiz<input type="color" name="cor"></p>
+                </fieldset>
+
+                <input type="submit" value="Submeter">
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

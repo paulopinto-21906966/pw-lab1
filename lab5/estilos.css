@@ -2,14 +2,15 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #5e6472;
     position: relative;
-    padding-bottom: 40rem;
+    padding-bottom: 8rem;
     min-height: 100%;
+    overflow-x: hidden;
     /* Hide horizontal scrollbar */
 
-    animation: background-gradient 2.3s;
+    animation: background-gradient 8s;
     animation-iteration-count: infinite;
     backface-visibility: hidden;
-    animation-timing-function: linear;
+    animation-timing-function: ease-in;
     background: radial-gradient(circle, rgba(255, 237, 180, 1) 0%, transparent 100%);
 }
 
@@ -153,6 +154,12 @@ li.header a {
     transition: color 0.2s linear;
     border-radius: 7px;
 }
+/* mudar a cor dos icones, para fazer a separação do Home/4/3 */
+li.header:nth-child(2), 
+li.header:nth-child(3), 
+li.header:nth-child(4){
+    color: #9cc53d;
+}
 
 li.header a:hover {
     background-color: #aedaf3;
@@ -267,7 +274,7 @@ summary {
     }
 }
 
-
+.material-icons.orange600 { color: #FB8C00; }
 /* Cores: 
     melon: ffa69e,
     eggshell: faf3dd,

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cidade de Leiria</title>
+    <meta name="author" content="Paulo Pinto">
+    <meta name="keywords" content="Leiria">
+    <meta name="description" content="Website sobre Leiria">
+
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
+    <!-- Cores: 
+            melon: ffa69e,
+            eggshell: faf3dd,
+            aero blue: b8f2e6,
+            powderblue: aed9e0,
+            black coral: 5e6472
+        -->
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <ul class="header">
+        <li class="header">
+            <span class="tooltiptext">Home</span>
+
+            <a href="../index.html">
+                <i class="material-icons">save</i>
+            </a>
+        </li>
+        <li class="header">
+            <span class="tooltiptext">Início</span>
+
+            <a href="index.html">
+                <i class="material-icons">visibility</i>
+            </a>
+        </li>
+        <li class="header">
+            <span class="tooltiptext">Localização</span>
+
+            <a href="local.html">
+                <i class="material-icons">map</i>
+            </a>
+        </li>
+        <li class="header">
+            <span class="tooltiptext">Multimédia</span>
+
+            <a href="multimedia.html">
+                <i class="material-icons">movie</i>
+            </a>
+        </li>
+        <li class="header">
+            <span class="tooltiptext">Informações</span>
+
+            <a href="info.html">
+                <i class="material-icons">info</i>
+            </a>
+        </li>
+        <li class="header">
+            <span class="tooltiptext">Quiz</span>
+
+            <a href="quizz.html">
+                <i class="material-icons">quiz</i>
+            </a>
+        </li>
+        <li class="header">
+            <span class="tooltiptext">Comentários</span>
+
+            <a href="comentarios.html">
+                <i class="material-icons">comment</i>
+            </a>
+        </li>
+        <li class="header">
+            <span class="tooltiptext">HTML5/CSS</span>
+
+            <a href="html5-css.html">
+                <i class="material-icons">text_format</i>
+            </a>
+        </li>
+    </ul>
+    <br>
+
+    <div class="row">
+        <div class="aside">
+
+            <h1>Leiria</h1>
+            <figure>
+                <img class="center" src="images/leiria_castelo.jpg">
+                <figcaption>O Castelo de Leiria visto da cidade</figcaption>
+                <summary>Erguido a topo de um monte, serve quase como um compasso para nos guiarmos pela cidade
+                </summary>
+            </figure>
+
+        </div>
+
+        <div class="maincontent">
+            <section>
+                <h3>HTML5 e CSS</h3>
+                <p>O HTML5 introduz vários novos elementos, que permitem definir a estrutura da página de forma
+                    semântica,
+                    aqui
+                    estão alguns deles</p>
+            </section>
+
+            <section>
+                <table class="htmlcss">
+                    <thead>
+                        <tr>
+                            <th>Elemento</th>
+                            <th>Foi usado?</th>
+                            <th>Onde?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>header</td>
+                            <td><i class="material-icons">check</i></td>
+                            <td>Em todas as páginas exceto index.html</td>
+                        </tr>
+                        <tr>
+                            <td>hx</td>
+                            <td><i class="material-icons">dangerous</i></td>
+                            <td>Não usei</td>
+                        </tr>
+                        <tr>
+                            <td>iframe</td>
+                            <td><i class="material-icons">check</i></td>
+                            <td>Na página multimédia</td>
+                        </tr>
+                        <tr>
+                            <td>table</td>
+                            <td><i class="material-icons">check</i></td>
+                            <td>Na página de informação e na html5-css</td>
+                        </tr>
+                        <tr>
+                            <td>svg</td>
+                            <td><i class="material-icons">dangerous</i></td>
+                            <td>nas paginas do Lab 4 e posterior</td>
+                        </tr>
+                        <tr>
+                            <td>br</td>
+                            <td><i class="material-icons">check</i></td>
+                            <td>Em todas as páginas</td>
+                        </tr>
+                        <tr>
+                            <td>figcaption</td>
+                            <td><i class="material-icons">check</i></td>
+                            <td>Usei em todas as página, com a imagem do castelo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <h3>CSS</h3>
+                <p>CSS serve para adicionar estilo à nossa página, é aconselhável fazê-lo fora dos ficheiros .html</p>
+                <table class="htmlcss">
+                    <thead>
+                        <tr>
+                            <th>Seletor</th>
+                            <th>Foi usado?</th>
+                            <th>Como funciona?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Universal</td>
+                            <td><i class="material-icons">check</i></td>
+                            <td>Estiliza um elemento indepentemente das suas caracteristicas</td>
+                        </tr>
+                        <tr>
+                            <td>Por ID</td>
+                            <td><i class="material-icons">check</i></td>
+                            <td>Estiliza o elemento com um certo id</td>
+                        </tr>
+                        <tr>
+                            <td>De Classe</td>
+                            <td><i class="material-icons">check</i></td>
+                            <td>Estiliza todos os elementos pertencentes àquela classe</td>
+                        </tr>
+                        <tr>
+                            <td>Pseudo-Class</td>
+                            <td><i class="material-icons">check</i></td>
+                            <td>Estado do elemento, por exemplo hover, active ou visited. </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <h3>Combinadores de Seletores CSS</h3>
+                <p>Os Combinadores de Seletores CSS focam-se na interação/relação entre dois ou mais elementos.</p>
+                <table class="htmlcss">
+                    <thead>
+                        <tr>
+                            <th>Seletor</th>
+                            <th>Foi usado?</th>
+                            <th>Como funciona?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Descendentes</td>
+                            <td><i class="material-icons">check</i></td>
+                            <td>Elemento dentro de outro elemento, independentemente do nível</td>
+                        </tr>
+                        <tr>
+                            <td>Filhos</td>
+                            <td><i class="material-icons">check</i></td>
+                            <td>Elemento dentro de outro elemento, no nível imediatamente seguinte</td>
+                        </tr>
+                        <tr>
+                            <td>Adjacentes</td>
+                            <td><i class="material-icons">dangerous</i></td>
+                            <td>Elemento após outro elemento
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Imediatamente Adjacentes</td>
+                            <td><i class="material-icons">dangerous</i></td>
+                            <td>Elemento imediatamente após outro elemento</td>
+                        </tr>
+                        <tr>
+                            <td>Agrupados</td>
+                            <td><i class="material-icons">check</i></td>
+                            <td>Estilizar múltiplos elementos da mesma forma</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+    <div class="footer">Trabalho desenvolvido por <a href="mailto:paulopintodigital@gmail.com">Paulo Pinto</a>,
+        a21906966</div>
+</body>
+
+</html>
